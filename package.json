@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "description": "this proyect is for generate cloud functions & service of case arboleda",
   "config": {
-    "function_name": "cfunctions-case-arboleda",
+    "function_name": "cfunctions-arboleda",
     "gcp_project_dev": "chazki-link-dev",
     "gcp_project_beta": "chazki-link-beta",
     "gcp_project": "chazki-link",
