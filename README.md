@@ -5,7 +5,7 @@
 1. Clone the repository
 
 ```bash
-git clone git@github.com:Chazki/cdfi-meli-nintendo.git
+git clone https://github.com/GeorgePrado/cfuntions-arboledaCase.git
 ```
 2. In the project directory, install the dependencies
 
