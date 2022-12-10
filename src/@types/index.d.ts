@@ -7,3 +7,7 @@ interface CustomRequest extends ExpressRequest {
     'enterprise-key'?: string
   }
 }
+
+interface SimpleArbRequest extends ExpressRequest {
+  headers: import('http').IncomingHttpHeaders
+}

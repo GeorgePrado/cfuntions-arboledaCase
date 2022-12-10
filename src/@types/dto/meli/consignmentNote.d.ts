@@ -88,3 +88,7 @@ interface DtoMeLiCdFiRouteShipmentResponse {
     id: string
     url: string
 }
+
+interface DtoArboledaResponse {
+    auth: string
+}

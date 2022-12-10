@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response, Router } from 'express'
 import { ValidationError } from 'joi'
 import { response } from '../../response'
-import { ConsignmentNoteService, GE } from '../../../services'
+import { ArboledaService, ConsignmentNoteService, GE } from '../../../services'
 import { MercadoLibreError } from '../../../utils/customError'
 import { mercadoLibreCdFiSchema } from '../schemas'
 
@@ -12,6 +12,29 @@ BusinessLayer.use(
     '/businessLayer',
     operationRouter
 )
+operationRouter
+    .route('/user/:id')
+    .get(
+        async (
+            req: SimpleArbRequest,
+            res: Response,
+            next: NextFunction
+        ) : Promise<void> => {
+            try {
+                const initGeneral = new Date();
+                const { params } = req;
+                const { id } = params;
+                console.log('identificador del user: ' + id);
+                response({}, res, 200)
+            } catch (error) {
+                
+            }
+       }
+    )  
+    .all((req: Request, res: Response, next: NextFunction) =>
+        next()
+  )
+
 
 operationRouter
     .route('/authorize')
